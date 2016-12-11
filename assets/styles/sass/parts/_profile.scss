@@ -4,13 +4,14 @@
 
 #profile {
     @include animation-fade-in(10s);
+    @include animation-fade-in-out(2.5s);
 
-    background-image: url(../images/profile.png);
+    background-image: url(../images/unsplash/bb9jwutmpuk-anthony-indraus.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    width: 50%;
+    width: 100%;
     height: 100%;
 
     position: absolute;
@@ -19,9 +20,9 @@
     z-index: 10;
 
     @media ($break-m) {
-        width: 40%;
-        height: calc(100% + 100px);
+        // width: 40%;
+        // height: calc(100% + 100px);
 
-        top: -100px;
+        // top: -100px;
     }
 }

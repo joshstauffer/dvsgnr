@@ -10,7 +10,7 @@ $font-color-heavy: rgba(255, 255, 255, 0.85);
 // Styles: Font styles.
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Libre Baskerville", serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.75;
@@ -18,8 +18,7 @@ body {
 }
 
 h1 {
-    font-family: "Merriweather", sans-serif;
-    font-size: 50px;
+    font-size: 700%;
     font-weight: 700;
     line-height: 1.25;
     color: $font-color-heavy;

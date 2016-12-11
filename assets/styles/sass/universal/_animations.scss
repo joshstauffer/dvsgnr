@@ -2,9 +2,9 @@
 /* Pulse
 ---------------------------------------------------------------------------------------------------- */
 
-@mixin animation-pulse() {
+@mixin animation-pulse($duration) {
     animation-name: pulse;
-    animation-duration: 1.5s;
+    animation-duration: $duration;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
 }
@@ -61,12 +61,36 @@
     0% {
         opacity: 0;
 
-        transform: translate(0, -60%);
+        transform: translate(-50%, -60%);
     }
 
     100% {
         opacity: 1;
 
-        transform: translate(0, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Fade In Out
+---------------------------------------------------------------------------------------------------- */
+
+@mixin animation-fade-in-out($duration) {
+    animation-name: fade-in-out;
+    animation-duration: $duration;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0.75;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.75;
     }
 }

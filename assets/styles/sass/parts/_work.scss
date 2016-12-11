@@ -91,7 +91,7 @@
     // Circles: The current circle.
 
     &:nth-child(1):after {
-        @include animation-pulse();
+        @include animation-pulse(1.5s);
 
         border-color: $color-green-heavy;
     }
