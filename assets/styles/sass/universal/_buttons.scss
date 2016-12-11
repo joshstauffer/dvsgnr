@@ -64,6 +64,11 @@
     // Small: No labels for mobile.
 
     @media ($break-s) {
+        background-size: 16px;
+
+        width: 48px;
+        height: 48px;
+
         &:hover {
             background-position: center center;
         }
