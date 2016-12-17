@@ -66,12 +66,18 @@ video::-webkit-media-controls-start-playback-button {
 ---------------------------------------------------------------------------------------------------- */
 @keyframes pulse {
   0% {
+    -webkit-transform: scale(0.85);
+    -ms-transform: scale(0.85);
     transform: scale(0.85);
     opacity: 0.75; }
   50% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
     opacity: 1; }
   100% {
+    -webkit-transform: scale(0.85);
+    -ms-transform: scale(0.85);
     transform: scale(0.85);
     opacity: 0.75; } }
 /* Fade In
@@ -86,9 +92,13 @@ video::-webkit-media-controls-start-playback-button {
 @keyframes fade-in-down {
   0% {
     opacity: 0;
+    -webkit-transform: translate(-50%, -60%);
+    -ms-transform: translate(-50%, -60%);
     transform: translate(-50%, -60%); }
   100% {
     opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); } }
 /* Fade In Out
 ---------------------------------------------------------------------------------------------------- */
@@ -159,6 +169,8 @@ a {
     background-color: rgba(0, 0, 0, 0.9);
     top: -64px;
     left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0); }
   .icon:hover .label {
     top: -32px;
@@ -271,12 +283,18 @@ body {
   top: 50%;
   left: 50%;
   z-index: 20;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
   #about h1 {
     margin-bottom: 10px;
     text-transform: uppercase; }
   #about p {
     margin: 0 0 5px; }
+  @media (max-width: 580px) {
+    #about {
+      padding-left: 25px;
+      padding-right: 25px; } }
 
 /* Social
 ---------------------------------------------------------------------------------------------------- */
@@ -288,6 +306,8 @@ body {
   bottom: 0;
   left: 50%;
   z-index: 20;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0); }
   #social > :first-child {
     border-top-left-radius: 3px; }

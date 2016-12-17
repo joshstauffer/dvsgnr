@@ -15,6 +15,8 @@
     left: 50%;
     z-index: 20;
 
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
     h1 {
@@ -37,6 +39,8 @@
     }
 
     @media ($break-s) {
+        padding-left: 25px;
+        padding-right: 25px;
         // width: 45%;
 
         // left: 8%;
