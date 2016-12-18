@@ -30,13 +30,15 @@ a {
     color: $font-color-heavy;
 }
 
-@media ($break-s) {
-    body {
-        font-size: 14px;
-    }
-
+@media ($break-m) {
     h1 {
         font-size: 38px;
         line-height: 1.45;
+    }
+}
+
+@media ($break-s) {
+    body {
+        font-size: 14px;
     }
 }

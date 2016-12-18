@@ -9,15 +9,17 @@
     background-color: $color-black-light;
     padding: 25px 50px;
     text-align: center;
+    margin: 0 auto;
 
-    position: absolute;
+    position: relative;
     top: 50%;
-    left: 50%;
     z-index: 20;
+    max-width: 660px;
+    width: 100%;
 
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 
     h1 {
         margin-bottom: 10px;
@@ -29,25 +31,11 @@
     }
 
     @media ($break-m) {
-        // width: 50%;
-
-        // left: 5%;
-
-        p {
-            // margin-left: 5%;
-        }
-    }
-
-    @media ($break-s) {
+        border-radius: 0;
+        max-width: none;
         padding-left: 25px;
         padding-right: 25px;
-        // width: 45%;
-
-        // left: 8%;
-
-        p {
-            // margin-left: 0;
-            // margin-bottom: 30px;
-        }
     }
+
+    @media ($break-s) {}
 }
